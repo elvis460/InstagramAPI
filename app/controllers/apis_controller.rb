@@ -22,7 +22,6 @@ class ApisController < ApplicationController
 
   def login
     redirect_to root_path if user_access_token.present?
-    puts Settings['instagram']
     @client_id = Settings['instagram.client_id']
     @redirect_uri =  Settings['instagram.redirect_uri']
   end
