@@ -1,0 +1,19 @@
+<%= render 'partial/header' %>
+
+<!-- show instagram photos -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <%= "<h1 class='text-center'>You don't have any instagram photos.</h1>".html_safe  if @photos.empty?%>
+      <% @photos.each do |photo| %>
+        <div class="col-md-4">
+          <section class="panel photo-group">
+            <div class="text-center">
+              <%= show_instagram_photos(photo)%>
+            </div>
+          </section>
+        </div>
+      <%end%>
+    </div>
+  </div>
+</div>

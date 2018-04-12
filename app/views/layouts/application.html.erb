@@ -9,7 +9,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="<%= params[:action] %>">
+    <div class="wrapper">
+      <%= yield %>
+    </div>
   </body>
 </html>

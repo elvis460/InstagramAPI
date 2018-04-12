@@ -1,5 +1,6 @@
-# Insgatram API with Ruby on Rails
+# Instagram API with Ruby on Rails
 
+Instagram API with Ruby on Rails
 
 # Getting Started
 
